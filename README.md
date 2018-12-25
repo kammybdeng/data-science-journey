@@ -5,8 +5,9 @@ This repository is mainly for myself to prepare for interviews and write-ups for
 It contains general data science notes, take-home practices, and some of my insights on data science.
 
 
-## Data Analysis Practices(in progress)
-[Data Analysis Practices](https://github.com/kammybdeng/dsi-interview-prep/blob/master/data-analysis/takehome%20challenges.ipynb)
+## Take Home Practices(in progress)
+[Take Home Practices](https://github.com/kammybdeng/data-science-journey/tree/master/take%20home%20practices)
+### From the book "A collection of Data Science Take-homes"
 
 ## Data Science Notes(in progress)
 [Data Science Notes](https://github.com/kammybdeng/dsi-interview-prep/blob/master/general%20notes/Data%20Science%20general%20notes.ipynb)
@@ -21,4 +22,4 @@ It contains general data science notes, take-home practices, and some of my insi
 [Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
 
 ## Machine Learning Notes
-[Machine Learning Notes]
+[Machine Learning Notes](https://github.com/kammybdeng/data-science-journey/tree/master/machine%20learning)
