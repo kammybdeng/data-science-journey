@@ -1,6 +1,6 @@
 # Data Science Journey
 
-This repository is mainly for myself to prepare for interviews and write-ups for future articles.
+This repository is mainly for myself to prepare for interviews and write-ups for future articles. It contains my general notes and insights of Data Science.
 
 ***
 
@@ -50,8 +50,7 @@ Some examples are:
   After the technical and real life practical results and conclusions, we can now put the actionable deliverables into action.
 
 
-
-It contains general data science notes and some of my insights on data science.
+***
 
 ### Data Science Notes (in progress)
 More practical concepts that perceives the problem from a business perspective
