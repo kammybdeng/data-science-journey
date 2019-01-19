@@ -1,13 +1,14 @@
 # Data Science Journey
 
-This repository is mainly for myself to prepare for interviews and write-ups for future articles. It contains my general notes and insights of Data Science.
+This repository is for my own reference to prepare for interviews and write-ups for future articles. It contains my general notes and insights of Data Science.
 
 ***
 
 
 ## Definition
 
-Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from data in various forms, both structured and unstructured, similar to data mining
+**Data science** is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from data in various forms, both structured and unstructured, similar to data mining
+
 (Source: Wikipedia)
 
 ## Applications
