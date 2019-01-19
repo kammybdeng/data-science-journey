@@ -1,4 +1,4 @@
-# Data Science Journey
+# Data Science
 
 This repository is for my own reference to prepare for interviews and write-ups for future articles. It contains my general notes and insights of Data Science.
 
@@ -20,43 +20,12 @@ Some examples are:
   - Product performances
 
 
-## Steps of implementation
-
-
-  ### 1.  Data Collection
-  Knowing what kind of data to pull from the data warehouse that would solve the problem
-
-  ### 2. EDA (Exploratory Data Analysis)
-  Explore the date to gain general idea of the data
-
-  ### 3. Data Cleaning/Transform
-  Clean and filter data to obtain information that are needed
-
-  ### 4. Feature Engineering
-  Transforming data into meaningful information that can be put into a model
-
-  ### 5. Model Selection
-  Select a relevant model for the problem (this phase often involves industrial or domain knowledge of the business)
-
-  ### 6. Model Training
-  Train the model to have the best performances
-
-  ### 7. A/B Testing
-  Common methods to validate the model in practice would be performing A/B testing
-
-  ### 8. Evaluation
-  Since the data collected from the A/B tests and(or) the original data only represents a subset of the population, we can use statistics to make inferences to reject of fail to reject our hypothesis
-
-  ### 9. Actionable deliverables
-  After the technical and real life practical results and conclusions, we can now put the actionable deliverables into action.
-
-
 ***
 
 ### Data Science Notes (in progress)
 More practical concepts that perceives the problem from a business perspective
 
-[Data Science Notes](https://github.com/kammybdeng/dsi-interview-prep/blob/master/general%20notes/Data%20Science%20general%20notes.ipynb)
+[Data Science Notes](https://github.com/kammybdeng/data-science-notes/blob/master/general_notes/Data_Science_notes.ipynb)
 
 ### Statistical Concepts (in progress)
 Statistics is used to make inferences from our subset of data. Commonly used tools are: StatsModels
