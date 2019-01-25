@@ -2,23 +2,12 @@
 
 This repository is for my own reference to prepare for interviews and write-ups for future articles. It contains my general notes and insights of Data Science.
 
-***
-
 
 ## Definition
 
 **Data science** is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from data in various forms, both structured and unstructured, similar to data mining
 
 (Source: Wikipedia)
-
-## Applications
-
-Some examples are:
-
-  - Fraud Detection
-  - User Growth
-  - Product performances
-
 
 ***
 
@@ -41,8 +30,3 @@ Probability is the fundamentals of statistics. It looks into the reasoning and b
 Python is essential for feature engineering and data manipulation. Commonly used tools are: pandas, numpy, and seaborn
 
 [Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
-
-### Machine Learning Notes
-Any kind of models that can learn from the input data and output predictions.
-
-[Machine Learning Notes](https://github.com/kammybdeng/data-science-journey/tree/master/machine%20learning)
