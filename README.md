@@ -27,6 +27,12 @@ Probability is the fundamentals of statistics. It looks into the reasoning and b
 [Probability Modelings](https://github.com/kammybdeng/dsi-interview-prep/blob/master/probability%20simulations.ipynb)
 
 ### Python Challenges (in progress)
-Python is essential for feature engineering and data manipulation. Commonly used tools are: pandas, numpy, and seaborn
+Python is essential for feature engineering and data manipulation. Common libraries are: pandas, numpy, and seaborn
 
 [Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
+
+### Database and SQL (in progress)
+Data Scientists interact with database systems everyday. They need to extract relevant datasets by writing SQL queries.
+
+[Database](https://github.com/kammybdeng/data-science-notes/blob/master/database-explained.ipynb)
+[SQL Exercises](https://github.com/kammybdeng/data-science-notes/blob/master/sql_exercises.ipynb)
