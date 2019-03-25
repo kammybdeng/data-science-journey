@@ -1,13 +1,10 @@
 # Data Science
 
+
+![DS word cloud](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/word-cloud3.png)
+
+
 This repository is for my own reference to prepare for interviews and write-ups for future articles. It contains my general notes and insights of Data Science.
-
-
-## Definition
-
-**Data science** is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from data in various forms, both structured and unstructured, similar to data mining
-
-(Source: Wikipedia)
 
 ***
 
