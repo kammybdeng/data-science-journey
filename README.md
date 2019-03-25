@@ -1,7 +1,7 @@
 # Data Science
 
 <p align="center">
-   src="https://github.com/kammybdeng/data-science-portfolio/blob/master/img/word-cloud3.v2.png">
+  <img src="https://github.com/kammybdeng/data-science-portfolio/blob/master/img/word-cloud3.v2.png">
 </p>
 
 
