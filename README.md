@@ -1,7 +1,8 @@
 # Data Science
 
-
-![DS word cloud](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/word-cloud3.png)
+<p align="center">
+  <img width="800" height="400" src="https://github.com/kammybdeng/data-science-portfolio/blob/master/img/word-cloud3.png">
+</p>
 
 
 This repository is for my own reference to prepare for interviews and write-ups for future articles. It contains my general notes and insights of Data Science.
