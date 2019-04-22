@@ -16,7 +16,6 @@ You can build a wordcloud too! See my code [here](https://github.com/kammybdeng/
 - [Data Science Projects!](#Data-Science-Projects)
 
 
-***
 
 ## Data Science Concepts
 
@@ -42,7 +41,7 @@ Probability is the fundamentals of Statistics. By understanding the behavior of 
 ### Database and SQL (in progress)
 Data Scientists often interact with SQL and other database systems.
 
-- [Database](https://github.com/kammybdeng/data-science-notes/blob/master/database-explained.ipynb)
+- [Database Explained](https://github.com/kammybdeng/data-science-notes/blob/master/database-explained.ipynb)
 - [SQL Exercises](https://github.com/kammybdeng/data-science-notes/blob/master/sql_exercises.ipynb)
 
 
@@ -55,7 +54,8 @@ A repository consists of take home exercises from the book, "A collection of Dat
 [Take home repository](https://github.com/kammybdeng/take-home-practices)
 
 ### Python Challenges (in progress)
-Python is essential for feature engineering and data manipulation.
+
+Python Challenges from various sources.
 
 [Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
 
@@ -64,9 +64,9 @@ Python is essential for feature engineering and data manipulation.
 
 My completed Data Science projects.
 
-- Kaggle Competition
+#### Kaggle Competition
 - [Kaggle Competition](https://github.com/kammybdeng/quora-insincere-question) (Text classification)
 
-- Case Studies and Capstone Projects
+#### Case Studies and Capstone Projects
 - [Capstone Project](https://github.com/kammybdeng/travel-time-rec) (Recommender and website)
 - [Analytics Case Study](https://github.com/kammybdeng/churn-analysis-case-study) (Business Impacts)
