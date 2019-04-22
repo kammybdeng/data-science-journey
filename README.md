@@ -5,7 +5,7 @@
 </p>
 
 
-This repository is mainly used as my own reference for interview preparation. However, if you find it helpful and interesting, feel free to contact me on LinkedIn for any questions or comments!
+This repository is mainly used as my own reference for interview preparation. However, if you find it helpful or interesting, feel free to contact me on LinkedIn for any questions or comments!
 
 You can build a wordcloud too! See my code [here](https://github.com/kammybdeng/data-science-portfolio/blob/master/extra/wordcloud.py).
 
@@ -13,7 +13,7 @@ You can build a wordcloud too! See my code [here](https://github.com/kammybdeng/
 - [Data Science Concepts](#Data-Science-Concepts)
 - [Database and SQL](#Database-and-SQL)
 - [Take home and python exercises](#Take-home-and-python-exercises)
-- [Case Studies and Kaggle Projects](#Case-Studies-and-Kaggle-Projects)
+- [Data Science Projects!](#Data-Science-Projects)
 
 
 ***
@@ -60,10 +60,13 @@ Python is essential for feature engineering and data manipulation.
 [Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
 
 
-## Case Studies and Kaggle Projects
+## Data Science Projects
 
-Projects that implemented and demonstrated my data science skills.
+My completed Data Science projects.
 
+- Kaggle Competition
 - [Kaggle Competition](https://github.com/kammybdeng/quora-insincere-question) (Text classification)
+
+- Case Studies and Capstone Projects
 - [Capstone Project](https://github.com/kammybdeng/travel-time-rec) (Recommender and website)
 - [Analytics Case Study](https://github.com/kammybdeng/churn-analysis-case-study) (Business Impacts)
