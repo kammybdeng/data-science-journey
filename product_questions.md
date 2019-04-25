@@ -64,8 +64,11 @@ b/c for long-term metrics, we cannot wait till 1 year to see the result, hence w
 Train model with previous short term proxy and have long term metrics as the targets, then from the short-term data we collected through A/B tests, we can then make long-term predictions
 
 ### Additional notes:
+
 Defining the right metric to measure
+
 Type of business
+
 Outliers dominated
 Metrics are sensitive to outliers
 Outliers are rare
@@ -87,14 +90,14 @@ Failed charge
 
 ### How to calculate for how long I should run an A/B test? (How to estimate the sample size in a t-test)
 
-Significant level -  0.05
-Power - 0.8
-Expected sample deviation of the change
-Minimum effect size you are interested in detecting
+- Significant level -  0.05
+- Power - 0.8
+- Expected sample deviation of the change
+- Minimum effect size you are interested in detecting
 
 Calculated require sample size /  # of traffic per day = # days
-If # days >= 14 - good to go
-If # days < 14 - would still want to run for 14 days to capture weekly pattern, but can split into 80% control and 20% treatment to avoid wasting traffic
+- If # days >= 14 - good to go
+- If # days < 14 - would still want to run for 14 days to capture weekly pattern, but can split into 80% control and 20% treatment to avoid wasting traffic
 
 
 ### What are the drawbacks of using supervised machine learning to predict fraud
@@ -105,42 +108,43 @@ Ways to correct:
 - Aggressive cut-off point
 Other drawbacks
 If misclassified as legitimate before, the model could recognize this pattern and mis-predict it to be legitimate again
+
 People find new ways to commit fraud -> won’t be able to keep up
 More reliable technique
 - Anomaly detection - detect abnormal patterns
   - Yet, in the beginning the model will be very noisy (curse of dimensionality). Will need to invest a lot of time and effort to shorten the dimension to meaningful features(indicators)
 
 Combination of both
-Follows the fraud pattern -> fraud
-Demonstrates anomaly pattern -> fraud
+- Follows the fraud pattern -> fraud
+- Demonstrates anomaly pattern -> fraud
 
 ### Give an example of a case in which you run an A/B test, test wins with significant p-value, but you still choose not to make the change (what are the cost of making the change)
 
 Some examples of cost:
-Human labor cost
-Engineering time to make the change, product to draft the documentations, customer service to help with questions
-Risk of bugs
-Consider short term cost and long term cost
-Justify the gain is worthy and “relevant” (product team)
-Check if the test was a multiple comparison problem -> if so, the significance level should not be 5%
+- Human labor cost
+- Engineering time to make the change, product to draft the documentations, customer service to help with questions
+- Risk of bugs
+- Consider short term cost and long term cost
+- Justify the gain is worthy and “relevant” (product team)
+- Check if the test was a multiple comparison problem -> if so, the significance level should not be 5%
 b/c # false positive = # variables * 0.05
 
 
 ### Do you expect that Uber trips without rider reviews have been better, worse, or same as trips with reviews? (handling missing value)
 
-Because riders decides whether or not to leave reviews(not random, self-selection bias), the distribution for the missing values will not follow the distribution of the non missing values
-Build a machine learning model to predict these ratings
-In practice, we could expect that they are related to bad experience b/c some cultures don’t want to give bad ratings (domain knowledge)
-However, if this is an input to another model, better to not replace the rating
+- Because riders decides whether or not to leave reviews(not random, self-selection bias), the distribution for the missing values will not follow the distribution of the non missing values
+- Build a machine learning model to predict these ratings
+- In practice, we could expect that they are related to bad experience b/c some cultures don’t want to give bad ratings (domain knowledge)
+- However, if this is an input to another model, better to not replace the rating
 Can insert -1 as to distinguish this group from the rest
 
 ### If 70% of Facebook users on iOS use Instagram, but only 35% of Facebook users on Android use Instagram, how would you investigate the discrepancy?
 
-It really means: “when predicting Y, is X (mobile operation system) a discriminant variable or not”
-If yes, what’s the actual difference? If not, what are the actual discriminant variables?
-Analysis: the OS could just be the proxy for other variables such as age, country, education b/c Americans are more likely to use the iOS system and Instagram
-Build decision tree with user-related variables and the OS to predict Instagram usage, if the top splits are on the user-related info that means OS is merely a proxy
-If OS is really the root cause that means one app is better than the other. Thus, we can further collect variables like loading time, user clicks bugs, and etc.
+- It really means: “when predicting Y, is X (mobile operation system) a discriminant variable or not”
+- If yes, what’s the actual difference? If not, what are the actual discriminant variables?
+- Analysis: the OS could just be the proxy for other variables such as age, country, education b/c Americans are more likely to use the iOS system and Instagram
+- Build decision tree with user-related variables and the OS to predict Instagram usage, if the top splits are on the user-related info that means OS is merely a proxy
+- If OS is really the root cause that means one app is better than the other. Thus, we can further collect variables like loading time, user clicks bugs, and etc.
 
 ### At Facebook we use as a metric number of likes per user per week. And, each week, we check it year over year to control for seasonality. This week, the metric is dramatically down. How would you find out the reason? Logging is fine as well as the query we used to get the data.
 
@@ -208,36 +212,36 @@ Assign a predicted $ to each segment
 
 ### Which variables are important to predict a fake listing on eBay?
 
-Characteristics of listings
-Not genuine/organic image
-Similar text/description
-Low price
-Characteristics of seller
-Unique IP address, bank account, credit card # -> check if they associate with multiple user accounts
+- Characteristics of listings
+- Not genuine/organic image
+- Similar text/description
+- Low price
+- Characteristics of seller
+- Unique IP address, bank account, credit card # -> check if they associate with multiple user accounts
 no/little ratings
-Browsing behavior - spend too less time/ too familiar with the website
+- Browsing behavior - spend too less time/ too familiar with the website
 
 
-Explain the drawbacks of running an A/B test by market (i.e all people in one market get version A and another market get version B)
+### Explain the drawbacks of running an A/B test by market (i.e all people in one market get version A and another market get version B)
 
 
-Users in different markets will never be as similar as the users in the same market
-Assuming full independence btw. users in different markets might be a stretch
-Past metrics show similar behavior, but could react differently in a new testing
-External factors - competitor launches, political events
-Only test “relevant” features, features that are supposed to be highly impacted by user behaviors
+- Users in different markets will never be as similar as the users in the same market
+- Assuming full independence btw. users in different markets might be a stretch
+- Past metrics show similar behavior, but could react differently in a new testing
+- External factors - competitor launches, political events
+- Only test “relevant” features, features that are supposed to be highly impacted by user behaviors
 
-Suddenly, our dashboard shows that the number of picture uploads per day by Internet Explorer users went to zero. What could be the reason?
+### Suddenly, our dashboard shows that the number of picture uploads per day by Internet Explorer users went to zero. What could be the reason?
 
-Segment users by various features
-Browser, device, country, etc.
-Technical issues/bugs
-The upload button is not working (front-end)
+- Segment users by various features
+- Browser, device, country, etc.
+- Technical issues/bugs
+- The upload button is not working (front-end)
 Unable to record the picture upload action (back-end)
 Query that access the table is not working properly (DBMS)
 unable to visualize the metric on Dashboard b/c of Dashboard code error/bugs (DBMS)
 
-How would you find out if someone put a fake school on LinkedIn? I.e. they actually didn’t attend it (in progress)
+### How would you find out if someone put a fake school on LinkedIn? I.e. they actually didn’t attend it (in progress)
 
 
 Number of connections (first degree, second, third degree) from that school and year
@@ -271,9 +275,9 @@ We want the model be able to capture the outliers -> model that will be sensitiv
 
 ### How would you increase revenue from advertising clicks if you were working or an ads company
 
-Break down ad click revenue
-CTR (click through rate) - probability of users clicking the ad when they see it
-Total number of ads shown to users
-Cost per click
-Think of scenarios that would bring up the ratio
-Increase CTR by better targeting - build products that
+- Break down ad click revenue
+- CTR (click through rate) - probability of users clicking the ad when they see it
+- Total number of ads shown to users
+- Cost per click
+- Think of scenarios that would bring up the ratio
+- Increase CTR by better targeting - build products that
