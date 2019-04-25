@@ -63,28 +63,27 @@ Prediction
 b/c for long-term metrics, we cannot wait till 1 year to see the result, hence we use a short-term proxy to predict the long-term metrics
 Train model with previous short term proxy and have long term metrics as the targets, then from the short-term data we collected through A/B tests, we can then make long-term predictions
 
-### Additional notes:
+### Additional notes
 
-Defining the right metric to measure
+- Defining the right metric to measure
+- Type of business
 
-Type of business
-
-Outliers dominated
-Metrics are sensitive to outliers
-Outliers are rare
-Metrics not sensitive to outliers
-Vanity metric vs Clarity metric
+- Outliers dominated
+- Metrics are sensitive to outliers
+- Outliers are rare
+- Metrics not sensitive to outliers
+- Vanity metric vs Clarity metric
 Ex. number of downloads vs.active engagement time with product (software-based)
 Ex. how much each customer buys vs how often they buy (E-commerce)
-----
-Cohort Analysis
-Partition users into different cohorts/groups based on their time of entrance or other factors
-Funnel analysis
-Sequences of events performed by users
-Churn
-Not liking the product
-Failed charge
 
+
+
+- Cohort Analysis
+- Partition users into different cohorts/groups based on their time of entrance or other factors
+- Funnel analysis
+- Sequences of events performed by users
+- Churn
+- Failed charge
 
 
 
@@ -148,42 +147,43 @@ Can insert -1 as to distinguish this group from the rest
 
 ### At Facebook we use as a metric number of likes per user per week. And, each week, we check it year over year to control for seasonality. This week, the metric is dramatically down. How would you find out the reason? Logging is fine as well as the query we used to get the data.
 
-Break down the metric decrease/increase by steps and investigate individually
-Numerator vs Denominator (this year/ last year) , (total numbers of likes / total numbers of users)
+- Break down the metric decrease/increase by steps and investigate individually
+- Numerator vs Denominator (this year/ last year) , (total numbers of likes / total numbers of users)
 Where is the majority fall?
-Additional users signed up -> but much less engaging
-Build a tree model. Label users during the “up weeks” as 1 and other previous weeks as 0. Look at the top splits, they will tell the characteristics of these new users
-Then conclude to a single country/area that have an increase/decrease in numbers of users, then state a hypothesis
-Local marketing campaign -> up vs local competitor launch -> down
-If we concluded that the number of likes went down, most likely it’s because of bugs
+- Additional users signed up -> but much less engaging
+- Build a tree model. Label users during the “up weeks” as 1 and other previous weeks as 0. Look at the top splits, they will tell the characteristics of these new users
+- Then conclude to a single country/area that have an increase/decrease in numbers of users, then state a hypothesis
+- Local marketing campaign -> up vs local competitor launch -> down
+- If we concluded that the number of likes went down, most likely it’s because of bugs
 
 ### How would you measure the performance of the customer service department?
 
 
-All departments should either relate to revenue or growth. This one can be rephrased into a growth problem
+- All departments should either relate to revenue or growth. This one can be rephrased into a growth problem
 In another word, if the performance is great, we should be able to retain and gain users, if not, otherwise.
-If we want to increase LTV
-Find a short-term proxy for this long-term metric
-We can define 1 for users who had the customer service ticket and bought stuff within 1 year, and 0 otherwise.
-Then we build a tree to see which variable most highly impacted the categorization, then that will be the variable that we are interested in
-FB- should we add a love button?
+- If we want to increase LTV
+    - Find a short-term proxy for this long-term metric
+- We can define 1 for users who had the customer service ticket and bought stuff within 1 year, and 0 otherwise.
+- Then we build a tree to see which variable most highly impacted the categorization, then that will be the variable that we are interested in
 
-### New feature implementation
-Find the proxy to see if there’s already a demand in the market
-Use NLP to go through comments to see if they are related to the love category -> then this shows demand
-Pick a crucial metric that will predicted to be highly impacted by this change
-User engagement - number of actions (likes/comments/post/etc.) per user within a certain time frame.
+### FB- should we add a love button? (New feature implementation)
+
+
+- Find the proxy to see if there’s already a demand in the market
+- Use NLP to go through comments to see if they are related to the love category -> then this shows demand
+- Pick a crucial metric that will predicted to be highly impacted by this change
+- User engagement - number of actions (likes/comments/post/etc.) per user within a certain time frame.
 
 
 ### You were launching a messaging app. Define 2 metrics that you’d choose to monitor app performance during the first months. Why do you chose them?
 
-Applies to any newly launched products
-Goal: Growth (targeting growth as the high level goal)
-Ultimately, as many users as possible and want the number of engaged users to go up over time
-Acquire new users (new signups / day - users that have message >= 1 message within the first X days)
-Retain current users (avg. messages / day / user) -> if possible, choose something that will incentivize other users actions
-Avoid vanity(futility/pointless) metrics
-One way to check: would lots of fake accounts affect our metric
+- Applies to any newly launched products
+- Goal: Growth (targeting growth as the high level goal)
+- Ultimately, as many users as possible and want the number of engaged users to go up over time
+- Acquire new users (new signups / day - users that have message >= 1 message within the first X days)
+- Retain current users (avg. messages / day / user) -> if possible, choose something that will incentivize other users actions
+- Avoid vanity(futility/pointless) metrics
+- One way to check: would lots of fake accounts affect our metric
 
 
 ### You have to predict conversion rate on Airbnb using user country as one of the input variables. How would you deal with the missing values in “country”?
