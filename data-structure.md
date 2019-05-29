@@ -1,7 +1,6 @@
 # Data Structure
-**UCSanDiegoX: CSE100x
-
-Data Structures: An Active Learning Approach**
+**UCSanDiegoX: CSE100x**
+**Data Structures: An Active Learning Approach**
 
 
 Data Structure - a particular structured way of storing data in a computer so that it can be used efficiently
@@ -46,12 +45,12 @@ we always want to describe them using the tightest possible upper-bound
 - byte - a unit of digital information and it is just a sequence of some number of bits. For simplicity,  we can assume that a byte is a sequence of 8 bits.
 
 1 byte is the smallest unit of storing memory in modern computers. Every file on a computer is just a sequence of 8-bit chunks. Text, images, videos, audio, literally all filetypes.
+  ```
+  EXERCISE:
+    How many distinct symbols could be represented with 4 bytes? (Write the answer as an integer, not in scientific notation)
 
-EXERCISE:
-  How many distinct symbols could be represented with 4 bytes? (Write the answer as an integer, not in scientific notation)
-
-2^(8*4)
-
+  2^(8*4)
+  ```
 
 "decimals" meant "base 10"
 The number 729 can be thought of as (10² × 7) + (10¹ × 2) + (10⁰ × 9)
@@ -59,30 +58,32 @@ The number 729 can be thought of as (10² × 7) + (10¹ × 2) + (10⁰ × 9)
 "binary numbers" meant "base 2"
 The number 101 can be thought of as  (2² × 1) + (2¹ × 0) + (2⁰ × 1).
 In other words, 101 in binary is equal to 4 + 0 + 1 = 5 in decimal
+  ```
+  EXERCISE:
+    Convert the binary number 101010 to decimal.
+    (2^5 × 1) + (2^4 × 0) + (2^3 × 1) + (2² × 0) + (2¹ × 1) + (2⁰ × 0)
+    = 32 + 0 + 8 + 0 + 2 + 0 = 42
+  ```
+  ```
+  EXERCISE:
+    Add the binary numbers 0101 and 0101
+    1010
+  ```
+  ```
+  EXERCISE:
+    What is the result of the following bitwise expression? Assume the numbers are unsigned 8-bit numbers. Enter your answer as a decimal number (not binary).
+    7 | (~125 << 3)
 
-EXERCISE:
-  Convert the binary number 101010 to decimal.
-  (2^5 × 1) + (2^4 × 0) + (2^3 × 1) + (2² × 0) + (2¹ × 1) + (2⁰ × 0)
-  = 32 + 0 + 8 + 0 + 2 + 0 = 42
+    Find a
+    0...0111 <- 7
+    Find b
+    1111101 <- 125
+    0000010 <- ~125
+    0010000 <- << 3
 
-EXERCISE:
-  Add the binary numbers 0101 and 0101
-  1010
-
-EXERCISE:
-  What is the result of the following bitwise expression? Assume the numbers are unsigned 8-bit numbers. Enter your answer as a decimal number (not binary).
-  7 | (~125 << 3)
-
-  Find a
-  0...0111 <- 7
-  Find b
-  1111101 <- 125
-  0000010 <- ~125
-  0010000 <- << 3
-
-  0010111 <- a | b
-  2^4 + 2^2 + 2^1 + 2^0 = 23
-
+    0010111 <- a | b
+    2^4 + 2^2 + 2^1 + 2^0 = 23
+  ```
 
 
 Side notes:
