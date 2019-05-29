@@ -1,11 +1,12 @@
 # UCSanDiegoX: CSE100x Data Structure
-**UCSanDiegoX: CSE100x**
+**UCSanDiegoX: CSE100x - Data Structures: An Active Learning Approach**
 
-**Data Structures: An Active Learning Approach**
+**Link to course click [here](https://stepik.org/course/579/)**
 
-Link to course click [here](https://stepik.org/course/579/)
-
+### Definition
 Data Structure - a particular structured way of storing data in a computer so that it can be used efficiently
+
+### Contents
 
 - [Big O](#Big-O)
 - [Classes of Computation Complexity](#Classes-of-Computation-Complexity)
