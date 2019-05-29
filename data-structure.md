@@ -1,11 +1,13 @@
-# Data Structure
+# UCSanDiegoX: CSE100x Data Structure
 **UCSanDiegoX: CSE100x**
-**Data Structures: An Active Learning Approach**
 
+**Data Structures: An Active Learning Approach**
 
 Data Structure - a particular structured way of storing data in a computer so that it can be used efficiently
 
 - [Big O](#Big-O)
+- [Classes of Computation Complexity](#Classes-of-Computation-Complexity)
+- [Bit-by-Bit](#Bit-by-Bit)
 - [Array lists and linked list](#Array-lists)
 - [Stacks and Queues](#Stacks-and-Queues)
 
@@ -22,14 +24,23 @@ Efficiency of Algorithm.
 - Big-O ("Big-Oh") - upper bound
 - Big-Ω ("Big-Omega") - lower bound
 - Big-ϴ ("Big-Theta") - upper bound and lower bound
+  ```
+  Example: Print 5 header lines and  then prints the n students' names and grades on separate lines.
 
-Example: Print 5 header lines and  then prints the n students' names and grades on separate lines.
-Number of operations = 2n + 5
-Big-O notation would be O(2n + 5)
-we would simplify to O(n) because we drop the constant (2n becomes n) and drop all lower terms (5 < n as n becomes large)
-we always want to describe them using the tightest possible upper-bound
+  Number of operations = 2n + 5
+  Big-O notation would be O(2n + 5)
+
+  we would simplify to O(n) because we drop the constant (2n becomes n) and drop all lower terms (5 < n as n becomes large)
+  we always want to describe them using the tightest possible upper-bound
+    ```
 
 **Space Complexity**
+
+
+Side notes:
+Fibonacci Sequence: xn = xn-1 + xn-2
+Naive Algorithm (recursive with 1.77 x 10^21 lines of code for N=100) vs Efficient Algorithm (array list with 202 lines of code for N=100)
+
 
 ## Classes of Computation Complexity
 (need to come back to this later)
@@ -46,8 +57,7 @@ we always want to describe them using the tightest possible upper-bound
 
 1 byte is the smallest unit of storing memory in modern computers. Every file on a computer is just a sequence of 8-bit chunks. Text, images, videos, audio, literally all filetypes.
   ```
-  EXERCISE:
-    How many distinct symbols could be represented with 4 bytes? (Write the answer as an integer, not in scientific notation)
+  EXERCISE: How many distinct symbols could be represented with 4 bytes? (Write the answer as an integer, not in scientific notation)
 
   2^(8*4)
   ```
@@ -59,20 +69,18 @@ The number 729 can be thought of as (10² × 7) + (10¹ × 2) + (10⁰ × 9)
 The number 101 can be thought of as  (2² × 1) + (2¹ × 0) + (2⁰ × 1).
 In other words, 101 in binary is equal to 4 + 0 + 1 = 5 in decimal
   ```
-  EXERCISE:
-    Convert the binary number 101010 to decimal.
+  EXERCISE: Convert the binary number 101010 to decimal.
+
     (2^5 × 1) + (2^4 × 0) + (2^3 × 1) + (2² × 0) + (2¹ × 1) + (2⁰ × 0)
     = 32 + 0 + 8 + 0 + 2 + 0 = 42
   ```
   ```
-  EXERCISE:
-    Add the binary numbers 0101 and 0101
+  EXERCISE: Add the binary numbers 0101 and 0101
     1010
   ```
   ```
-  EXERCISE:
-    What is the result of the following bitwise expression? Assume the numbers are unsigned 8-bit numbers. Enter your answer as a decimal number (not binary).
-    7 | (~125 << 3)
+  EXERCISE: What is the result of the following bitwise expression? Assume the numbers are unsigned 8-bit numbers. Enter your answer as a decimal number (not binary).
+  7 | (~125 << 3)
 
     Find a
     0...0111 <- 7
@@ -84,11 +92,6 @@ In other words, 101 in binary is equal to 4 + 0 + 1 = 5 in decimal
     0010111 <- a | b
     2^4 + 2^2 + 2^1 + 2^0 = 23
   ```
-
-
-Side notes:
-Fibonacci Sequence: xn = xn-1 + xn-2
-Naive Algorithm (recursive with 1.77 x 10^21 lines of code for N=100) vs Efficient Algorithm (array list with 202 lines of code for N=100)
 
 
 
