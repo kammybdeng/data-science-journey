@@ -11,7 +11,7 @@ You can build a wordcloud too! See my code [here](https://github.com/kammybdeng/
 
 ## Contents
 - [Data Science Concepts](#Data-Science-Concepts)
-- [Data Structure](#Data-Structure)
+- [UCSanDiegoX: CSE100x Data Structure](#UCSanDiegoX:-CSE100x-Data-Structure)
 - [Database and SQL](#Database-and-SQL)
 - [Projects and more practices](#Data-Science-Projects)
 
@@ -35,7 +35,7 @@ Probability is the fundamentals of Statistics. By understanding the behavior of 
 [Probability Modelings](https://github.com/kammybdeng/dsi-interview-prep/blob/master/probability%20simulations.ipynb)
 
 
-## Data structure
+## UCSanDiegoX: CSE100x Data structure
 - [Data Structure (CS heavy) ](https://github.com/kammybdeng/data-science-portfolio/blob/master/data-structure.md)
 
 
