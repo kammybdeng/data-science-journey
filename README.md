@@ -11,9 +11,9 @@ You can build a wordcloud too! See my code [here](https://github.com/kammybdeng/
 
 ## Contents
 - [Data Science Concepts](#Data-Science-Concepts)
+- [Data Structure](#Data-Structure)
 - [Database and SQL](#Database-and-SQL)
-- [Take home and python exercises](#Take-home-and-python-exercises)
-- [Data Science Projects!](#Data-Science-Projects)
+- [Projects and more practices](#Data-Science-Projects)
 
 
 
@@ -35,6 +35,10 @@ Probability is the fundamentals of Statistics. By understanding the behavior of 
 [Probability Modelings](https://github.com/kammybdeng/dsi-interview-prep/blob/master/probability%20simulations.ipynb)
 
 
+## Data structure
+- [Data Structure (CS heavy) ](https://github.com/kammybdeng/data-science-portfolio/blob/master/data-structure.md)
+
+
 
 ## Database and SQL
 
@@ -44,20 +48,6 @@ Data Scientists often interact with SQL and other database systems.
 - [Database Explained](https://github.com/kammybdeng/data-science-notes/blob/master/database-explained.ipynb)
 - [SQL Exercises](https://github.com/kammybdeng/data-science-notes/blob/master/sql_exercises.ipynb)
 
-
-
-## Take home and python exercises
-
-### Take home (in progress)
-A repository consists of take home exercises from the book, "A collection of Data Science Take-homes."
-
-[Take home repository](https://github.com/kammybdeng/take-home-practices)
-
-### Python Challenges (in progress)
-
-Python Challenges from various sources.
-
-[Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
 
 
 ## Data Science Projects
@@ -70,3 +60,17 @@ My completed Data Science projects.
 #### Case Studies and Capstone Projects
 - [Capstone Project](https://github.com/kammybdeng/travel-time-rec) (Recommender and website)
 - [Analytics Case Study](https://github.com/kammybdeng/churn-analysis-case-study) (Business Impacts)
+
+
+## More practices
+
+### Take home (in progress)
+A repository consists of take home exercises from the book, "A collection of Data Science Take-homes."
+
+[Take home repository](https://github.com/kammybdeng/take-home-practices)
+
+### Python Challenges (in progress)
+
+Python Challenges from various sources.
+
+[Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
