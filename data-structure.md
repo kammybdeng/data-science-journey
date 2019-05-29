@@ -3,6 +3,8 @@
 
 **Data Structures: An Active Learning Approach**
 
+Link to course click [here](https://stepik.org/course/579/)
+
 Data Structure - a particular structured way of storing data in a computer so that it can be used efficiently
 
 - [Big O](#Big-O)
@@ -10,10 +12,6 @@ Data Structure - a particular structured way of storing data in a computer so th
 - [Bit-by-Bit](#Bit-by-Bit)
 - [Array lists and linked list](#Array-lists)
 - [Stacks and Queues](#Stacks-and-Queues)
-
-
-### References
-https://stepik.org/course/579/
 
 
 ## Big O
