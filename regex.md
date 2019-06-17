@@ -1,7 +1,7 @@
 ## Regex
 
 
-Udemy 
+Udemy
 - https://www.udemy.com/learn-regular-expressions-in-online-regex-course/learn/lecture/9733920#overview
 
 
@@ -24,29 +24,49 @@ Character Set - match any single character in that set
   - **?** - 0 or 1 time
   - **\*** - 0 or more time
   - **+** - 1 or more time
-  
+
   #### Limiting Repetition
-  
+
     - \d{n} - exactly n times
     - \d{min, } - at least n times
     - \d{min, max} - at least n times and no more than m times
-  
+
 ex.
 [a-z]{4}
 
 will match "this" and not will not match "thi4"
+
+### Greedy Nature
+- Greedy -
+
+
 
 ### Anchors and Boundaries
 
   - **^** - occur at the beginning of the string
   - **$** - occur at the end of the string
   - **\b** - occur on the boundary btw. a \w and a \W
-  
+
   - \w  [a-zA-Z0-9_]  
   - \W  [^\w]
+
+
+### Groups and Alternation
+**Groups**
+**Syntax:**
+
+  - (group)
+
+**Alternation** - similar to character set
+**Syntax:**
+  - (   |   )
+
+ex. gr[ae]y and gr(a|e)y will both match "gray" and "grey"  
+
+
   
-  
-  
-  
-  
-  
+
+### Assertions - Lookaround
+
+- **Positive Lookahead** - (?=       )
+- **Negative Lookahead** - (?!       )
