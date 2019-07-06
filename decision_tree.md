@@ -4,12 +4,10 @@
 - Information gain = decrease in entropy
 - Gain(T, X) = Entropy(T) - Entropy(T, X)
 
-## False Positives and False Negatives
+### False Positives and False Negatives
 
 - False Positives - Type I error
 - False Negatives - Type II error (missing a real positive - might be more serious. Though cases vary on context of the problem)
-
-# Random Forest
 
 ## Ensemble learning
 Steps:
@@ -18,21 +16,33 @@ Steps:
 3. Choose the number of Ntree of trees you want to build and repeat Steps 1 and 2
 4. For new data point, each one of your Ntree tree will predict a category. The final result is the majority vote from your Ntree trees result.
 
-# "Commitee" decision vs Boosting
+## "Commitee" decision vs Boosting
 
-## "Commitee" decision
-- trivial examples
-- equal weights (majority vote)
-- might want to weight unevenly
+    "Commitee" decision
+    - trivial examples
+    - equal weights (majority vote)
+    - might want to weight unevenly
 
-## Boosting
-- focus new learners on examples that others get wrong
-- train learners sequentially
-- convert many "weak" learners into a complex predictor
+    Boosting
+    - focus new learners on examples that others get wrong
+    - train learners sequentially
+    - convert many "weak" learners into a complex predictor
 
-# Gradient Boosting
-
-Start with a weak tree. The next tree is then trained to minimize the loss function when its outputs are added to the first tree. 
+### Random Forest(Majority vote)
 
 
-# XGBoost (Gradient Boosting)
+### Gradient Boosting
+
+the weak learner trains on the remaining errors (so-called pseudo-residuals) of the strong learner
+
+
+
+#### XGBoost (Gradient Boosting)
+
+
+### AdaBoosting
+
+Changes the sample distribution by modifying the weights attached to each of the instances. It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances.
+
+# References
+https://www.quora.com/What-is-the-difference-between-gradient-boosting-and-adaboost
