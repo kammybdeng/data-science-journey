@@ -1,5 +1,5 @@
 
-
+## Week 1
 ## Nearest Neighbor Classification
 
 MNIST images: 
@@ -71,6 +71,16 @@ p = (1/2, 1/4, 1/8, 1/8)
 q = (1/6, 1/3, 1/3, 1/6)
 
 
+## Week 2
+## Generative Approach to Classification
+
+If a coin is flipped 5 times, what is the size of the sample space(the set of all possible outcomes) for the experiment?
+- 2^5 = 32
+
+
+## Week 6
+## Support Vector Machines
+
 
 
 
@@ -80,7 +90,7 @@ Course: https://www.edx.org/course/machine-learning-fundamentals-3
 
 
 
-# Data Preprocessing
+## Data Preprocessing
 ## Python - Object-oriented programming
 
 Class - the entire model/structure
