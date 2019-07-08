@@ -82,10 +82,28 @@ If a coin is flipped 5 times, what is the size of the sample space(the set of al
 ## Support Vector Machines
 
 
-
-
-
 Course: https://www.edx.org/course/machine-learning-fundamentals-3
+
+
+
+
+
+## Week 7 and 8
+## Decision Trees
+
+Pruning 
+- to improve test error and reduce overfitting
+- cutting off some leaves, so the tree will have some significantly 
+
+
+
+
+Course: https://www.edx.org/course/big-data-analytics-using-spark-uc-san-diegox-dse230x
+
+
+
+
+
 
 
 
