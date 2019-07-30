@@ -96,9 +96,67 @@ In other words, 101 in binary is equal to 4 + 0 + 1 = 5 in decimal
 
 ### Array lists
 constant-time access (read and write)
+  - homogeneous data structure
+  - adjacent memory location
+  - random **access** O(1) time (best case) (why though? b/c memory location is constant)
+  - O(1) time (worst case, when inserting element in the front of the list. Same when inserting in the middle of the list. O(n/2) we drop the constant in Big-O notation, hence, O(n)). Also when we are removing elements in the middle b/c we then need to reshift the right side of the elements to the left side.
+  ```
+You create an array of integers (assume each integer is exactly 4 bytes) in memory, and the beginning of the array (i.e., the start of the very first cell of the array) happens to be at memory address 1000 (in decimal, not binary). What is the memory address of the start of cell 6 of the array, assuming 0-based indexing (i.e., cell 0 is the first cell of the array)?
+
+1000 + 4 * 6
+4 * 6 (bytes) instead of 8 * 4 * 6 (bits) b/c smallest chunk in memory is byte
+  ```
+
+Array Lists as "dynamic":
+1. allocate some **default "large" amount of memory** initially,
+2. insert elements into this initial array,
+3. once initial array is full, **create a new larger array** (typically twice as large as the old array),
+4. **copy** all elements from the old array into the new array, and then replace any references to the old array with references to the new array
+
+
+```
+Array structures (e.g. the array, or the Java ArrayList, or the C++ vector, etc.) require that all elements be the same size. However, array structures can contain strings, which can be different lengths (and thus different sizes in memory). How is this possible?
+
+Every element contains pointers (memory addresses) to beginning of string
+
+```
+
+#### Summary:
+- finding an element in a **sorted Array List** is O(log n) in the worst case, accessing a specific element is O(1)
+- inserting into an **Array List** is O(n) in the worst case and finding an element in a non-sorted Array List is O(n)
 
 
 ### Linked lists
+
+![linked_list](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/linked_list.png)
+
+- data structure composed of nodes
+- nodes are "linked" to one another via pointers
+- one global *head pointer* and one global *tail pointer* (the only two nodes with direct access)
+
+```
+Write a function find(Node* node, int element) that starts at the given node and either returns true if the element exists somewhere in the Linked List, otherwise false if the element does not exist in the Linked List.
+
+
+class Node:
+    def __init__(self):
+        self.value = None
+        self.next = None
+
+def find(node, element):
+    current = node
+    while current:
+        if current.value == element:
+            return True
+        current = current.next
+    return False
+
+```
+
+
+
+
+
 
 
 ### Stacks and Queues
