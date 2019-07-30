@@ -94,7 +94,7 @@ In other words, 101 in binary is equal to 4 + 0 + 1 = 5 in decimal
 
 
 
-### Array lists
+## Array Lists
 constant-time access (read and write)
   - homogeneous data structure
   - adjacent memory location
@@ -126,7 +126,7 @@ Every element contains pointers (memory addresses) to beginning of string
 - inserting into an **Array List** is O(n) in the worst case and finding an element in a non-sorted Array List is O(n)
 
 
-### Linked lists
+## Linked Lists
 
 ![linked_list](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/linked_list.png)
 
@@ -153,7 +153,16 @@ def find(node, element):
 
 ```
 
+### Comparison between Array List and Linked List:
+- Array List
+  - PRO: can be optimized with binary search when "finding"
+  - CON: needed to allocate extra space to avoid recreating backing ArrayList
+- Linked List
+  - PRO: constant time O(1) when inserting and deleting and dynamic allocation of memory of new node
+  - CON: can't be optimized with binary search when "finding", stuck with O(n)
 
+
+## Skip Lists
 
 
 
