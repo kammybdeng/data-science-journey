@@ -176,3 +176,56 @@ Push - adds an item to a stack
 Pop - extracts the most recently pushed item from the stack
 
 For arrays, stacks do have a maximum size, for linked-list, they don't.
+
+
+----
+
+# UCSanDiegoX: DSE230x Big Data Analytics Using Spark
+
+
+## Map-Reduce and Spark
+
+- In Big Data, the major source of **latency** is reading and writing to storage.
+- **Latency**: the amount of time a packet of data takes to get from one designated point to another
+- **Caching** : reduces storage latency by bringing relevant data close to the CPU
+
+- **Cache Hit**: able to retrieve from cache
+- **Cache Miss**: when byte is not in Cache, need to free up space in cache and replace
+
+
+- **Temporal Locality**: multiple accesses to *same* address within a short time period
+  - example: the parameters/weights in a model
+
+
+- **Spatial Locality**: multiple accesses to *close-together* address within a short time period
+  - Benefits:
+    - memory is partitioned into Blocks/Lines and *memory locations that are close to each other are likely to fall in the same block*, resulting in more cache hits
+
+
+
+#### Traversal of 6 elements touches 4 pages in **Linked List**
+![linked_list](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/spatial_locality_1.png)
+
+
+#### Traversal of 6 elements touches 2 pages in **Array**
+![linked_list](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/spatial_locality_2.png)
+
+```
+What is the primary reason that a linked-list will cause more cache misses than an array?
+
+Linked list elements are not stored in consecutive memory locations.
+
+```
+
+
+```
+Given the following code, determine which type of locality is present:
+
+A = [0]*10000
+sum = 0
+for i in range(10000):
+    sum += A[i] + i
+
+Spacial locality
+
+```
