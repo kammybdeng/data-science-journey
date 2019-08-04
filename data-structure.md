@@ -229,3 +229,32 @@ for i in range(10000):
 Spacial locality
 
 ```
+
+### Memory Hierarchy
+- *top* of hierarchy: small and fast storage close to CPU
+- *bottom* of hierarchy: large and slow storage further from CPU
+
+- Data Processing Cluster: many computers linked through an ethernet connection
+  - storage is shared
+  - "caching" is replaced by "shuffling"
+  - *Spark RDD* (Resilient distribution dataset)
+
+### Hadoop File System (HDFS)
+- break down files into chunks, make copies, and distribute copies randomly to multiple commodity computers.
+
+![HDFS](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/HDFS.png)
+
+### Spark vs Hadoop
+- Hadoop: distributed files
+- Spark: distributed memory
+
+#### Spark Context
+- PySpark program runs on the main node and control is achieved with a *SparkContext* object
+- A notebook can have only one *SparkContext* object
+
+#### Resilient Distributed Dataset (RDD)
+- main data structure in Spark
+- a list with no direct access to, because it's distributed
+- RDD1 -> RDD2 is a lineage
+- RDD2 can be consumed as it is being generated
+- By default are not **materialized**: stored in memory. *They do materialized if cached or otherwise persisted.*
