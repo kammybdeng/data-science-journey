@@ -209,6 +209,61 @@ Pr(𝑋=2)=(0.3)^2(0.7) = 0.063
 
 ```
 
+## Circular Array
+
+![circular_array_1](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/circular_array_1.png)
+
+![circular_array_2](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/circular_array_2.png)
+
+
+- Array List: random access, but a long time to insert
+- Linked List: short time to insert, but long time to find/access
+- Circular Array:
+  - with heads and tail pointers -> faster to insert b/c just change pointers
+  - with array list structure -> faster to access
+
+
+```
+What is the worst-case time complexity for an "insert" operation at the front or back of a Circular Array?
+
+O(n)
+
+What is the worst-case time complexity for an "insert" operation at the front or back of a Circular Array, given that the backing array is not full?
+
+O(1)
+
+```
+
+## Abstract Data Types
+
+A model for data types where the data type is defined by its behavior from the point of view of a user of the data
+
+```
+Which of the following statements are true about an Abstract Data Type?
+
+1. Any implementations of an Abstract Data Type have a strict set of functions they must support
+2. An Abstract Data Type is designed from the perspective of a user, not an implementer
+
+```
+
+### Deques
+In short, an **Abstract Data Type** simply describes *a set of features*, and based on the features we wish to have, we need to choose an appropriate **Data Structure to use as the backbone** to implement the ADT.
+
+```
+If we only care about adding/removing/viewing elements in the front or back of a Deque﻿ (and not at all in the middle), which of the two implementation approaches we discussed would be the better choice? Doubly Linked List or Circular Array?
+
+Doubly Linked List
+Both data structures have equal time complexities, O(1), to add/remove from the ends, but a Circular Array cannot grow indefinitely and has to be resized once the backing array is full, whereas the nodes in a Linked List can be allocated dynamically (so it can grow indefinitely)
+```
+
+### Queues
+Queue is considered a "First In, First Out" (FIFO) data type.
+
+
+
+
+
+
 
 
 ### Stacks and Queues
