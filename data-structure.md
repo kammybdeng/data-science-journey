@@ -162,9 +162,52 @@ def find(node, element):
   - CON: can't be optimized with binary search when "finding", stuck with O(n)
 
 
+
 ## Skip Lists
 
+![skip_list](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/skip_list.png)
+A data structure that expands on the Linked List and uses extra forward pointers with some random number generation to simulate the binary search algorithm achievable in Array Lists.
 
+![skip_list_2](https://github.com/kammybdeng/data-science-portfolio/blob/master/img/skip_list_2.png)
+
+
+1. To find an element **e** in a Skip List, we start at the head in the highest layer.
+2. When given layer i, we traverse (or move forward on) the forward pointers until *just before* we reach a node that is larger than **e** or until there are no more forward pointers on level i.
+3. Then, move down one layer and continue the search.
+4. If **e** exists in our Skip List, we will eventually find it (because the bottom layer is a regular Linked List, so we would step through the elements one-by-one until we find e).
+5. Otherwise, if we reached down to layer 0 and still couldn't find **e**, then **e** does not exist.
+
+```
+What is the worst-case time complexity to find or remove elements from a Skip List?
+
+O(n) (because if the heights of the nodes in the list are distributed poorly, we will effectively have a regular Linked List,)
+
+Assuming the heights of the nodes in a Skip List are optimally-distributed (i.e., each "jump" allows you to traverse half of the remainder of the list), what is the time complexity to find or remove elements from a Skip List?
+
+O(log n)
+
+```
+
+Can optimize the best distribution of heights to enable Skip List "find" algorithm to perform binary search, resulting in a O(log n) time complexity.
+
+
+- Bernoulli distribution - random variable that has two possible outcomes (1 and 0)
+- Binomial distribution - sum of independently, identically distributed **Bernoulli** random variables
+- Geometric distribution - Given a Bernoulli distribution, the probability distribution of kth trial results in the last failure(1-p) before the first success(p). Pr(𝑋=𝑘)=(1−𝑝)^𝑘𝑝
+
+
+Can sample from the Geometric distribution following Pr(𝑋=𝑘)=𝑝^𝑘(1−𝑝) to find out the height of each new node. Formula changed here, because we are interested in the **first failure(k)** instead of the **first success**.
+
+
+
+```
+To determine the heights of new nodes, you use a coin with a probability of success of p = 0.3. What is the probability that a new node will have a height of 2?
+
+
+Pr(𝑋=2)=𝑝^2(1−𝑝)
+Pr(𝑋=2)=(0.3)^2(0.7) = 0.063
+
+```
 
 
 
@@ -230,7 +273,6 @@ Spacial locality
 
 ```
 
-<<<<<<< HEAD
 ### Memory Hierarchy
 - *top* of hierarchy: small and fast storage close to CPU
 - *bottom* of hierarchy: large and slow storage further from CPU
@@ -281,14 +323,9 @@ Traversing a numpy array *row-wise* is faster than *column-wise* because of loca
 - PySpark program runs on the main node and control is achieved with a *SparkContext* object
 - A notebook can have only one *SparkContext* object
 
->>>>>>> 434037b... skip list notes
 #### Resilient Distributed Dataset (RDD)
 - main data structure in Spark
 - a list with no direct access to, because it's distributed
 - RDD1 -> RDD2 is a lineage
 - RDD2 can be consumed as it is being generated
 - By default are not **materialized**: stored in memory. *They do materialized if cached or otherwise persisted.*
-<<<<<<< HEAD
-=======
->>>>>>> a304a877fc8350bb68004e89fedc8e6c5cf1b1b2
->>>>>>> 434037b... skip list notes
