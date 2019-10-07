@@ -11,8 +11,8 @@ Data Structure - a particular structured way of storing data in a computer so th
 - [Big O](#Big-O)
 - [Classes of Computation Complexity](#Classes-of-Computation-Complexity)
 - [Bit-by-Bit](#Bit-by-Bit)
-- [Array lists and linked list](#Array-lists)
-- [Stacks and Queues](#Stacks-and-Queues)
+- [Array lists, Linked lists, Skip lists, and Circular arrays](#Array-lists)
+- [Deque, Queue, and Stacks](#Abstract-Data-Types)
 
 
 ## Big O
@@ -261,11 +261,6 @@ Queue is considered a "First In, First Out" (FIFO) data type.
 
 
 
-
-
-
-
-
 ### Stacks and Queues
 
 Stack - last in, first out (LIFO)
@@ -274,6 +269,12 @@ Push - adds an item to a stack
 Pop - extracts the most recently pushed item from the stack
 
 For arrays, stacks do have a maximum size, for linked-list, they don't.
+
+
+
+
+
+
 
 
 ----
@@ -350,12 +351,11 @@ Spacial locality
 - PySpark program runs on the main node and control is achieved with a *SparkContext* object
 - A notebook can have only one *SparkContext* object
 
-=======
-<<<<<<< HEAD
+
 ### Row-wise vs Column-wise Scanning
 
 Traversing a numpy array *row-wise* is faster than *column-wise* because of locality.
-=======
+
 ### Memory Hierarchy
 - *top* of hierarchy: small and fast storage close to CPU
 - *bottom* of hierarchy: large and slow storage further from CPU
