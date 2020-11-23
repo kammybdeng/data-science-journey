@@ -10,45 +10,11 @@ This repository is mainly used as my own reference for interview preparation. Ho
 You can build a wordcloud too! See my code [here](https://github.com/kammybdeng/data-science-portfolio/blob/master/extra/wordcloud.py).
 
 ## Contents
-- [Data Science Concepts](#Data-Science-Concepts)
-- [UCSanDiegoX CSE100x (Data Structure)](#UCSanDiegoX-CSE100x-Data-Structure)
-- [Database and SQL](#Database-and-SQL)
-- [Projects and more practices](#Data-Science-Projects)
-
-
-
-## Data Science Concepts
-
-### Data Science Concepts (in progress)
-Practical business concepts of data problems.
-
-[Data Science Concepts](https://github.com/kammybdeng/data-science-notes/blob/master/general_notes/Data_Science_notes.ipynb)
-
-### Statistical Concepts (in progress)
-Statistics is often used to generate inference hypothesis in our data.
-
-[Statistical Concepts](https://github.com/kammybdeng/dsi-interview-prep/blob/master/Stats%20Concepts.ipynb)
-
-### Probability Modelings (in progress)
-Probability is the fundamentals of Statistics. By understanding the behavior of the data distributions, we can justify our methods of statistical analysis.
-
-[Probability Modelings](https://github.com/kammybdeng/dsi-interview-prep/blob/master/probability%20simulations.ipynb)
-
-
-## UCSanDiegoX CSE100x Data structure
-An UCSanDiegoX data structure course on Stepik
-- [My notes and progress (CS heavy) ](https://github.com/kammybdeng/data-science-portfolio/blob/master/data-structure.md)
-- [Link to course](https://stepik.org/course/579/)
-
-
-## Database and SQL
-
-### Database and SQL (in progress)
-Data Scientists often interact with SQL and other database systems.
-
-- [Database Explained](https://github.com/kammybdeng/data-science-notes/blob/master/database-explained.ipynb)
-- [SQL Exercises](https://github.com/kammybdeng/data-science-notes/blob/master/sql_exercises.ipynb)
-
+- [Data Science Concepts 1](https://github.com/kammybdeng/data-science-notes/blob/master/general_notes/Data_Science_notes.ipynb)
+- [Data Science Concepts 2](https://github.com/kammybdeng/data-science-notes/blob/master/ds-algorithms.md)
+- [SQL Practices](https://github.com/kammybdeng/data-science-notes/blob/master/sql_exercises.ipynb)
+- [Data Structure](https://github.com/kammybdeng/data-science-portfolio/blob/master/data-structure.md)
+- [Big Data](https://github.com/kammybdeng/data-science-portfolio/blob/master/big-data-with-spark.md)
 
 
 ## Data Science Projects
@@ -62,16 +28,9 @@ My completed Data Science projects.
 - [Capstone Project](https://github.com/kammybdeng/travel-time-rec) (Recommender and website)
 - [Analytics Case Study](https://github.com/kammybdeng/churn-analysis-case-study) (Business Impacts)
 
-
 ## More practices
 
 ### Take home (in progress)
 A repository consists of take home exercises from the book, "A collection of Data Science Take-homes."
 
-[Take home repository](https://github.com/kammybdeng/take-home-practices)
-
-### Python Challenges (in progress)
-
-Python Challenges from various sources.
-
-[Python Challenges](https://github.com/kammybdeng/dsi-interview-prep/blob/master/python%20challenge/Python%20challenges.ipynb)
+[Take home repository](https://github.com/kammybdeng/data-analysis/analysis-challenges.ipynb)
