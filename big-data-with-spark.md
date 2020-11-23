@@ -4,7 +4,6 @@
 ### Contents
 
 - [Memory Latency](#Memory-Latency)
-- [Classes of Computation Complexity](#Classes-of-Computation-Complexity)
 - [Spark vs Hadoop](#Spark-vs-Hadoop)
 
 ## Memory Latency
